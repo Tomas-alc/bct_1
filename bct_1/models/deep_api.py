@@ -212,11 +212,13 @@ def train(**kwargs):
     
     # 1. implement your training here
     
-    np.sum(train_args)
+    res = np.sum(train_args)
     
     # 2. update "message"
     
-    train_results = { "Error": "No model implemented for training (train())" }
+    #train_results = { "Error": "No model implemented for training (train())" }
+    train_results = res
+    
     message["training"].append(train_results)
 
     return message
