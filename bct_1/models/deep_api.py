@@ -208,7 +208,7 @@ def train(**kwargs):
     """
 
     message = { "status": "ok",
-                "training": [],
+                "training": [5*train_args],
               }
 
     # use the schema
