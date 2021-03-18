@@ -179,11 +179,17 @@ def _predict_url(*args):
 
 
 def get_train_args():
+
+
     """
     https://docs.deep-hybrid-datacloud.eu/projects/deepaas/en/latest/user/v2-api.html#deepaas.model.v2.base.BaseModel.get_train_args
     :param kwargs:
     :return:
     """
+    
+    
+    
+    
     return cfg.TrainArgsSchema().fields
 
 
@@ -212,7 +218,7 @@ def train(**kwargs):
     
     # 1. implement your training here
     
-    res = np.sum(train_args)
+    res = 5*train_args
     
     # 2. update "message"
     
