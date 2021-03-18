@@ -9,6 +9,17 @@ import pkg_resources
 # import project's config.py
 import bct_1.config as cfg
 from aiohttp.web import HTTPBadRequest
+import pandas as pd
+import numpy as np
+import os
+import tensorflow as tf
+from tensorflow import keras
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+from scipy.stats import pearsonr
+
+
 
 from functools import wraps
 
@@ -200,6 +211,9 @@ def train(**kwargs):
     train_args = schema.load(kwargs)
     
     # 1. implement your training here
+    
+    np.sum(train_args)
+    
     # 2. update "message"
     
     train_results = { "Error": "No model implemented for training (train())" }
